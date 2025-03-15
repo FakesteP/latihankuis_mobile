@@ -90,7 +90,7 @@ class _LoginPageState extends State<LoginPage> {
                           if (_formKey.currentState!.validate()) {
                             if (_username.text == 'fulan' &&
                                 _password.text == 'fulan') {
-                              Navigator.push(context,
+                              Navigator.pushReplacement(context,
                                   MaterialPageRoute(builder: (context) {
                                 return HomePage(username: _username.text);
                               }));
